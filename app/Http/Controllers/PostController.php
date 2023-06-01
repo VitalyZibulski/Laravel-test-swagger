@@ -27,7 +27,7 @@ class PostController extends Controller
         $data = $request->validated();
         $post = Post::create($data);
 
-        return PostResource::make($post);
+        return PostResource::make($post)->resolve();
     }
 
     /**
