@@ -24,9 +24,11 @@ use App\Http\Controllers\Controller;
  *          response=200,
  *          description="Ok",
  *          @OA\JsonContent(
- *              @OA\Property(property="id", type="integer", example=1),
- *              @OA\Property(property="title", type="string", example="Some title"),
- *              @OA\Property(property="likes", type="integer", example=10),
+ *                  @OA\Property(property="data", type="object",
+ *                  @OA\Property(property="id", type="integer", example=1),
+ *                  @OA\Property(property="title", type="string", example="Some title"),
+ *                  @OA\Property(property="likes", type="integer", example=10),
+ *             )
  *          ),
  *     )
  * )
