@@ -14,8 +14,10 @@ use App\Http\Controllers\Controller;
  *        @OA\JsonContent(
  *          allOf={
  *              @OA\Schema(
- *                  @OA\Property(property="title", type="string", example="Some title"),
- *                  @OA\Property(property="likes", type="integer", example=10),
+ *                  @OA\Property(property="", type="array", @OA\Items(
+ *                      @OA\Property(property="title", type="string", example="Some title"),
+ *                      @OA\Property(property="likes", type="integer", example=10),
+ *                  ))
  *              )
  *          }
  *        )
