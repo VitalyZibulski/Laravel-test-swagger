@@ -14,17 +14,11 @@ use App\Http\Controllers\Controller;
  *        @OA\JsonContent(
  *          allOf={
  *              @OA\Schema(
- *                  @OA\Property(property="", type="array", @OA\Items(
- *                      @OA\Property(property="title", type="string"),
- *                      @OA\Property(property="likes", type="integer"),
- *                  ))
+ *                  @OA\Property(property="id", type="integer", enum={1, 2, 3, 4})
  *              )
  *          },
  *          example={
- *              {
- *                  "title": "Some title",
- *                  "likes": 10
- *              }
+ *              "ids": {1, 2, 3, 4}
  *          }
  *        )
  *     ),
