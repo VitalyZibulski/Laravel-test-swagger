@@ -15,10 +15,16 @@ use App\Http\Controllers\Controller;
  *          allOf={
  *              @OA\Schema(
  *                  @OA\Property(property="", type="array", @OA\Items(
- *                      @OA\Property(property="title", type="string", example="Some title"),
- *                      @OA\Property(property="likes", type="integer", example=10),
+ *                      @OA\Property(property="title", type="string"),
+ *                      @OA\Property(property="likes", type="integer"),
  *                  ))
  *              )
+ *          },
+ *          example={
+ *              {
+ *                  "title": "Some title",
+ *                  "likes": 10
+ *              }
  *          }
  *        )
  *     ),
